@@ -26,12 +26,12 @@ const SampleText = [
   "facebook",
   "meta",
   "google",
-  "yokiieditz",
-  "github",
-  "kunal-kushwaha",
   "vuejs",
   "nodejs",
   "tailwindlabs",
+  "yokiieditz",
+  "github",
+  "kunal-kushwaha",
 ];
 
 const App = () => {
@@ -86,21 +86,13 @@ const App = () => {
                   path="/"
                   element={
                     <section className="min-h-[50vh] my-1 py-2 flex justify-start items-start gap-5 max-md:flex-col max-md:gap-8">
-                      <div className=" w-1/3 max-md:w-[90%] mx-auto p-2 flex flex-col gap-3 items-start overflow-hidden">
+                      <div className="yoki w-1/3 max-md:w-[90%] mx-auto p-2 flex flex-col gap-3 items-start max-md:items-center overflow-hidden">
                         <span className="text-3xl">
                           Enter any GitHub username
                         </span>
-                        <div className="text-gray-400 p-1">
-                          <h3 className="text-gray-800">Sample Text:</h3>
-                          <div className="w-full text-center grid grid-cols-3 text-[16px]">
-                            {SampleText.map((text, index) => (
-                              <span key={index}>{text}</span>
-                            ))}
-                          </div>
-                        </div>
                         <form className="search-text" onSubmit={searchForUser}>
                           <input
-                            className="max-w-[320px] max-md:w-[90%] rounded-full border border-gray-400 shadow-inner shadow-secondary py-2 px-4 text-lg  focus:border-blue-500 outline-none"
+                            className="max-w-[320px] max-md:w-[98%] rounded-full border border-gray-400 shadow-inner shadow-secondary py-2 px-4 text-lg  focus:border-blue-500 outline-none"
                             type="text"
                             placeholder="Search for User:"
                             value={userSearch}
@@ -110,6 +102,14 @@ const App = () => {
                           />
                           <p className="p-1 px-2 text-gray-400">{userSearch}</p>
                         </form>
+                        <div className="text-gray-400 p-1">
+                          <h3 className="text-gray-800">Sample Text:</h3>
+                          <div className="w-full text-center grid grid-cols-3 text-[16px]">
+                            {SampleText.map((text, index) => (
+                              <span key={index}>{text}</span>
+                            ))}
+                          </div>
+                        </div>
                       </div>
 
                       {foundUser ? (
