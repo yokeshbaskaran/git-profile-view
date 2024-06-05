@@ -1,10 +1,20 @@
-.App {
-  margin: 50px;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.yoki {
+  border: 2px solid red;
 }
 
-a {
-  text-decoration: none;
+.yokii {
+  border: 2px solid blue;
 }
+
+.yokiii {
+  border: 2px solid greenyellow;
+}
+
+/*  navbar */
 
 nav ul {
   list-style-type: none;
@@ -19,7 +29,7 @@ nav ul li {
   border-radius: 4px 4px 0 0;
   border: 1px solid grey;
   border-bottom: 0;
-  color: grey;
+  color: black;
   flex: 1;
   background-color: gold;
 }
@@ -36,6 +46,12 @@ nav ul li a {
   display: inline-block;
 }
 
+strong {
+  @apply text-gray-500 font-medium pr-1  bg-clip-text text-transparent text-xl bg-gradient-to-r from-pink-500  to-violet-500;
+}
+
+/*  other */
+/* 
 .search-user input {
   padding: 10px;
   border: 1px solid rgba(grey, 0.5);
@@ -73,4 +89,4 @@ nav ul li a {
 
 .follower h3 {
   width: 400px;
-}
+} */
