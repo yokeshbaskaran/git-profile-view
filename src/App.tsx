@@ -86,7 +86,7 @@ const App = () => {
                   path="/"
                   element={
                     <section className="min-h-[50vh] my-1 py-2 flex justify-start items-start gap-5 max-md:flex-col max-md:gap-8">
-                      <div className="yoki w-1/3 max-md:w-[90%] mx-auto p-2 flex flex-col gap-3 items-start max-md:items-center overflow-hidden">
+                      <div className="w-1/3 max-md:w-[90%] mx-auto p-2 flex flex-col gap-3 items-start max-md:items-center overflow-hidden">
                         <span className="text-3xl">
                           Enter any GitHub username
                         </span>
